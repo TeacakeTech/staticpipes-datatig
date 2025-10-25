@@ -6,7 +6,7 @@ name = "staticpipes-datatig"
 description = "StaticPipes and DataTig"
 readme = "README.md"
 version = "0.0.0"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = ["datatig","staticpipes"]
 
 [project.optional-dependencies]
