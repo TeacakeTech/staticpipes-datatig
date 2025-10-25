@@ -17,7 +17,10 @@ class PipeLoadDatatig(BasePipe):
     def __init__(self, directory=""):
         self.directory = directory
 
-    def start_prepare(self, current_info: CurrentInfo) -> None:
+    def get_pass_numbers(self) -> list:
+        return [100]
+
+    def start_build(self, current_info: CurrentInfo) -> None:
 
         absolute_directory = (
             os.path.join(self.source_directory.dir, self.directory)
