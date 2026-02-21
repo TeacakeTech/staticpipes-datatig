@@ -13,7 +13,7 @@ def test_frictionless():
     # setup
     out_dir = tempfile.mkdtemp(prefix="staticpipes_tests_")
     config = staticpipes.config.Config(
-        pipes=[
+        pipes_and_groups_of_pipes=[
             staticpipesdatatig.pipes.load_datatig.PipeLoadDatatig(),
             staticpipesdatatig.pipes.datatig_write_frictionless_output.PipeDatatigFrictionless(),  # noqa
         ],

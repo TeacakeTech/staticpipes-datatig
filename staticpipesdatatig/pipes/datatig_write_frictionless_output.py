@@ -25,4 +25,6 @@ class PipeDatatigFrictionless(BasePipe):
         frictionless_writer.go()
 
         with open(temp_out_filename, "rb") as fp:
-            self.build_directory.write(self.output_dir, self.output_filename, fp.read())
+            self._build_directory.write(
+                self.output_dir, self.output_filename, fp.read()
+            )

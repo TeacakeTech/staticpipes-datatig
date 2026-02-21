@@ -7,7 +7,7 @@ description = "StaticPipes and DataTig"
 readme = "README.md"
 version = "0.0.0"
 requires-python = ">=3.10"
-dependencies = ["datatig","staticpipes>=0.5"]
+dependencies = ["datatig","staticpipes>=0.7"]
 
 [project.optional-dependencies]
 staticpipesdev = ["pytest", "black", "isort", "mypy", "flake8", "sphinx"]

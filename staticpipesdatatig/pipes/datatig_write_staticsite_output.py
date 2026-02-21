@@ -32,6 +32,6 @@ class PipeDatatigStaticSite(BasePipe):
                 for file in files:
                     build_dir = self.output_dir + "/" + dir if self.output_dir else dir
                     build_dir = build_dir.replace("//", "/").strip("/")
-                    self.build_directory.copy_in_file(
+                    self._build_directory.copy_in_file(
                         build_dir, file, os.path.join(root, file)
                     )
